@@ -1,4 +1,3 @@
-import './App.css';
 import Container from './components/Container';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
