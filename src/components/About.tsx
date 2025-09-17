@@ -2,7 +2,7 @@ import { useMediaQuery } from 'react-responsive';
 import Container from './Container';
 import clsx from 'clsx';
 
-const WhatIsBackyardSection = () => {
+const About = () => {
   const isTablet = useMediaQuery({ maxWidth: 1279 });
 
   return (
@@ -222,4 +222,4 @@ const WhatIsBackyardSection = () => {
   );
 };
 
-export default WhatIsBackyardSection;
+export default About;
