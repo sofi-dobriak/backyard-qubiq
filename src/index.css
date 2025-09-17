@@ -5,7 +5,7 @@
   --font-family-gilroy: "Gilroy", sans-serif;
   --font-family-archivo: "Archivo", sans-serif;
 
-  --breakpoint-xxl: 1920px;
+  --breakpoint-lg: 1920px;
 }
 
 
@@ -75,8 +75,15 @@
 
 body {
   font-family: "Gilroy", sans-serif;
+  font-weight: 400;
   color: #303030;
   background-color: #efeff2;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Archivo", sans-serif;
 }
 
 nav,
@@ -90,7 +97,6 @@ nav+button {
   nav {
     font-size: 13px;
   }
-
 }
 
 .visually-hidden {

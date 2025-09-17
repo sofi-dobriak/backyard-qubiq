@@ -5,10 +5,10 @@ const Header = () => {
   const isTablet = useMediaQuery({ maxWidth: 1279 });
 
   return (
-    <header className='flex items-center justify-between fixed top-6 left-[50%] translate-x-[-50%] w-full max-w-[320px] md:max-w-[696px] xl:max-w-[800px] xxl:max-w-[920px]'>
+    <header className='flex items-center justify-between xl:justify-normal fixed top-[24px] left-[50%] translate-x-[-50%] w-full max-w-[320px] md:max-w-[696px] xl:max-w-[1100px] lg:max-w-[1920px] z-1000'>
       <a
         href='../../index.html'
-        className='flex gap-2 items-center text-base text-[rgba(51,51,51,0.95)]'
+        className='flex gap-2 items-center text-base text-[rgba(51,51,51,0.95)] xl:mr-[230px]'
       >
         <img
           src={isMobile ? '../images/mob-logo.png' : '../images/tab-logo.png'}
@@ -23,7 +23,7 @@ const Header = () => {
         <button
           type='button'
           aria-label='Button for open mobile menu'
-          className='py-3.5 px-3 bg-[#f6f7f8] border border-[rgba(222,222,227,0.45)] rounded-xl'
+          className='py-[14px] px-[12px] bg-[#f6f7f8] border border-[rgba(222,222,227,0.45)] rounded-xl'
         >
           <svg width={15} height={12}>
             <use href='../icons.svg#icon-burger' className='stroke-[#525352]'></use>
@@ -33,12 +33,12 @@ const Header = () => {
 
       {!isMobile && (
         <>
-          <nav className='flex items-center gap-12.5'>
-            <ul className='flex items-center gap-2 w-full max-w-[388px] bg-[#f2f3f5] rounded-full border border-[rgba(225,225,226,0.46)] px-1 h-[33px] xl:max-w-[459px]'>
+          <nav className='flex items-center gap-[50px]'>
+            <ul className='flex items-center gap-[8px] w-full max-w-[388px] bg-[#f2f3f5] rounded-full border border-[rgba(225,225,226,0.46)] px-[3px] h-[33px] xl:max-w-[459px]'>
               <li>
                 <a
                   href='../../index.html'
-                  className='text-[#fbfbfc] px-2.5 py-2 bg-[#303030] rounded-full'
+                  className='text-[#fbfbfc] px-[10px] py-[8px] bg-[#303030] rounded-full'
                 >
                   Home
                 </a>
