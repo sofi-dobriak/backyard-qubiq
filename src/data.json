@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Yield Aggregator",
+    "description_title": "One-click yield aggregation",
+    "description": "Choose multiple stablecoin strategies, diversify in seconds, and optimize your yield without complexity",
+    "image": {
+      "small": {
+        "webp": "../images/what-is-backyard/aggregator-small.webp",
+        "png": "../images/what-is-backyard/aggregator-small.png"
+      },
+      "big": {
+        "webp": "../images/what-is-backyard/aggregator-big.webp",
+        "png": "../images/what-is-backyard/aggregator-big.png"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "Yield-backed Stablecoin",
+    "description_title": "Unlock liquidity with BYD",
+    "description": "Mint BYD against your yield-generating LP tokens to stay liquid and productive at the same time",
+    "image": {
+      "small": {
+        "webp": "../images/what-is-backyard/stablecoin-small.webp",
+        "png": "../images/what-is-backyard/stablecoin-small.png"
+      },
+      "big": {
+        "webp": "../images/what-is-backyard/stablecoin-big.webp",
+        "png": "../images/what-is-backyard/stablecoin-big.png"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "Boost DeFi Liquidity",
+    "description_title": "Boost protocols, earn more",
+    "description": "Your liquidity empowers DeFi — vote for pools, earn bribes, and maximize your rewards.",
+    "image": {
+      "small": {
+        "webp": "../images/what-is-backyard/liquidity-small.webp",
+        "png": "../images/what-is-backyard/liquidity-small.png"
+      },
+      "big": {
+        "webp": "../images/what-is-backyard/liquidity-big.webp",
+        "png": "../images/what-is-backyard/liquidity-big.png"
+      }
+    }
+  }
+]
