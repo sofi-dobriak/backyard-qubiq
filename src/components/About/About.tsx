@@ -37,7 +37,7 @@ const About = () => {
             <div className='custom-pagination'></div>
           </Swiper>
         ) : (
-          <ul className='mb-[20px] md:mb-[27px] xl:mb-0 xl:flex xl:items-center xl:justify-between'>
+          <ul className='mb-[20px] md:mb-[27px] xl:mb-0 xl:flex xl:items-center xl:justify-between xl:gap-[78px]'>
             {data.map(item => (
               <ListItem key={item.id} {...item} />
             ))}

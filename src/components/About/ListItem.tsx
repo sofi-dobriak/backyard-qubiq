@@ -69,7 +69,7 @@ const ListItem = ({ id, title, description_title, description, image }: ListItem
           <h3 className='text-[20px]'>{title}</h3>
         </div>
 
-        <div className='rounded-[31px] bg-[#f4f6f7] px-[32px] py-[30px] w-full max-w-[310px] md:max-w-[388px] xl:max-w-[320px] 2xl:max-w-[340px]'>
+        <div className='rounded-[31px] bg-[#f4f6f7] px-[32px] py-[30px] w-full max-w-[310px] md:max-w-[388px] xl:min-w-[320px] 2xl:max-w-[340px]'>
           <p
             className={clsx(
               'archivo',

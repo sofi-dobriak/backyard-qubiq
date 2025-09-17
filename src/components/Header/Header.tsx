@@ -7,6 +7,9 @@ import Navigation from './Navigation';
 import ConnectButton from './ConnectButton';
 
 const Header = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isTablet = useMediaQuery({ maxWidth: 1279 });
+
   const [mobileIsOpen, setMobileIsOpen] = useState(false);
 
   const handleOpenMobile = () => {
@@ -16,9 +19,6 @@ const Header = () => {
   const handleCloseMobile = () => {
     setMobileIsOpen(false);
   };
-
-  const isMobile = useMediaQuery({ maxWidth: 767 });
-  const isTablet = useMediaQuery({ maxWidth: 1279 });
 
   return (
     <header className='flex items-center justify-between xl:justify-normal fixed top-[24px] left-[50%] translate-x-[-50%] w-full max-w-[320px] md:max-w-[696px] xl:max-w-[1100px] z-1000'>
