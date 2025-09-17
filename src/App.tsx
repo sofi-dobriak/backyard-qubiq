@@ -1,19 +1,34 @@
+import { useState } from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
-// import MobileMenu from './components/MobileMenu';
+import MobileMenu from './components/MobileMenu';
 import WhatIsBackyardSection from './components/WhatIsBackyardSection';
 
 function App() {
+  const [mobileIsOpen, setMobileIsOpen] = useState(false);
+
+  const handleOpenMobile = () => {
+    setMobileIsOpen(true);
+  };
+
+  const handleCloseMobile = () => {
+    setMobileIsOpen(false);
+  };
+
   return (
     <>
-      <Header />
+      <Header
+        mobileIsOpen={mobileIsOpen}
+        openMobile={handleOpenMobile}
+        closeMobile={handleCloseMobile}
+      />
 
       <main>
         <HeroSection />
         <WhatIsBackyardSection />
       </main>
 
-      {/* <MobileMenu /> */}
+      {mobileIsOpen && <MobileMenu closeMobile={handleCloseMobile} />}
     </>
   );
 }

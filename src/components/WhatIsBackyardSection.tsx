@@ -6,7 +6,7 @@ const WhatIsBackyardSection = () => {
   const isTablet = useMediaQuery({ maxWidth: 1279 });
 
   return (
-    <section className='mb-[65px] md:mb-[126px] xl:mb-[146px] 2xl:mb-[131px]'>
+    <section className='mb-[65px] md:mb-[126px] xl:mb-[146px] 2xl:mb-[131px]' id='about'>
       <Container>
         <h2 className='font-bold text-[28px] md:text-[42px] 2xl:text-[48px] leading-[1.1] mb-[40px] md:mb-[36px] xl:mb-[20px]'>
           What is Backyard?

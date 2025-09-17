@@ -1,6 +1,13 @@
+import clsx from 'clsx';
 import { useMediaQuery } from 'react-responsive';
 
-const Header = () => {
+interface HeaderProps {
+  mobileIsOpen: boolean;
+  openMobile: () => void;
+  closeMobile: () => void;
+}
+
+const Header = ({ mobileIsOpen, openMobile, closeMobile }: HeaderProps) => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const isTablet = useMediaQuery({ maxWidth: 1279 });
 
@@ -21,13 +28,23 @@ const Header = () => {
 
       {isMobile && (
         <button
+          onClick={mobileIsOpen ? closeMobile : openMobile}
           type='button'
           aria-label='Button for open mobile menu'
-          className='py-[14px] px-[12px] bg-[#f6f7f8] border border-[rgba(222,222,227,0.45)] rounded-xl'
+          className={clsx(
+            'py-[14px] px-[12px] bg-[#f6f7f8] border border-[rgba(222,222,227,0.45)] rounded-xl',
+            mobileIsOpen ? 'bg-[rgba(236,236,240,0.3)]' : 'bg-[#f6f7f8]'
+          )}
         >
-          <svg width={15} height={12}>
-            <use href='../icons.svg#icon-burger' className='stroke-[#525352]'></use>
-          </svg>
+          {mobileIsOpen ? (
+            <svg width={15} height={12}>
+              <use href='../icons.svg#icon-close' className='stroke-[#525352]'></use>
+            </svg>
+          ) : (
+            <svg width={15} height={12}>
+              <use href='../icons.svg#icon-burger' className='stroke-[#525352]'></use>
+            </svg>
+          )}
         </button>
       )}
 
