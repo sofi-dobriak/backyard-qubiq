@@ -1,14 +1,11 @@
 import clsx from 'clsx';
+import { useMediaQuery } from 'react-responsive';
 
-interface Image {
-  small: {
-    webp: string;
-    png: string;
-  };
-  big: {
-    webp: string;
-    png: string;
-  };
+interface ImageType {
+  webp: string;
+  webp2x: string;
+  png: string;
+  png2x: string;
 }
 
 interface ListItemProps {
@@ -16,37 +13,45 @@ interface ListItemProps {
   title: string;
   description_title: string;
   description: string;
-  image: Image;
+  image: {
+    small: ImageType;
+    big: ImageType;
+  };
 }
 
 const ListItem = ({ id, title, description_title, description, image }: ListItemProps) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
+  const src = isMobile ? image.small.png : image.big.png;
+  const altText = `An image for item about ${title}`;
+
   return (
     <li className='md:flex flex-row-reverse items-center justify-between xl:block'>
       <picture>
         <source
-          srcSet={`${image.big.webp} 1x, ${image.big.webp}@2x 2x`}
+          srcSet={`${image.big.webp} 1x, ${image.big.webp2x} 2x`}
           type='image/webp'
-          media='(min-width:768)'
+          media='(min-width:768px)'
         />
         <source
-          srcSet={`${image.big.png} 1x, ${image.big.png}@2x 2x`}
+          srcSet={`${image.big.png} 1x, ${image.big.png2x} 2x`}
           type='image/png'
-          media='(min-width:768)'
+          media='(min-width:768px)'
         />
 
         <source
-          srcSet={`${image.small.webp} 1x, ${image.small.webp}@2x 2x`}
+          srcSet={`${image.small.webp} 1x, ${image.small.webp2x} 2x`}
           type='image/webp'
-          media='(max-width:767)'
+          media='(max-width:767px)'
         />
         <source
-          srcSet={`${image.small.png} 1x, ${image.small.png}@2x 2x`}
+          srcSet={`${image.small.png} 1x, ${image.small.png2x} 2x`}
           type='image/png'
-          media='(max-width:767)'
+          media='(max-width:767px)'
         />
         <img
-          src={image.small.png}
-          alt='An image for item about aggregator'
+          src={src}
+          alt={altText}
           className='h-auto w-full max-w-[179px] md:max-w-[245px] xl:max-w-[179px] m-auto relative z-[-1]'
         />
       </picture>

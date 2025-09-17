@@ -6,12 +6,16 @@
     "description": "Choose multiple stablecoin strategies, diversify in seconds, and optimize your yield without complexity",
     "image": {
       "small": {
-        "webp": "../images/what-is-backyard/aggregator-small.webp",
-        "png": "../images/what-is-backyard/aggregator-small.png"
+        "webp": "/images/what-is-backyard/aggregator-small.webp",
+        "webp2x": "/images/what-is-backyard/aggregator-small@2x.webp",
+        "png": "/images/what-is-backyard/aggregator-small.png",
+        "png2x": "/images/what-is-backyard/aggregator-small@2x.png"
       },
       "big": {
-        "webp": "../images/what-is-backyard/aggregator-big.webp",
-        "png": "../images/what-is-backyard/aggregator-big.png"
+        "webp": "/images/what-is-backyard/aggregator-big.webp",
+        "webp2x": "/images/what-is-backyard/aggregator-big@2x.webp",
+        "png": "/images/what-is-backyard/aggregator-big.png",
+        "png2x": "/images/what-is-backyard/aggregator-big@2x.png"
       }
     }
   },
@@ -22,12 +26,16 @@
     "description": "Mint BYD against your yield-generating LP tokens to stay liquid and productive at the same time",
     "image": {
       "small": {
-        "webp": "../images/what-is-backyard/stablecoin-small.webp",
-        "png": "../images/what-is-backyard/stablecoin-small.png"
+        "webp": "/images/what-is-backyard/stablecoin-small.webp",
+        "webp2x": "/images/what-is-backyard/stablecoin-small@2x.webp",
+        "png": "/images/what-is-backyard/stablecoin-small.png",
+        "png2x": "/images/what-is-backyard/stablecoin-small@2x.png"
       },
       "big": {
-        "webp": "../images/what-is-backyard/stablecoin-big.webp",
-        "png": "../images/what-is-backyard/stablecoin-big.png"
+        "webp": "/images/what-is-backyard/stablecoin-big.webp",
+        "webp2x": "/images/what-is-backyard/stablecoin-big@2x.webp",
+        "png": "/images/what-is-backyard/stablecoin-big.png",
+        "png2x": "/images/what-is-backyard/stablecoin-big@2x.png"
       }
     }
   },
@@ -38,12 +46,16 @@
     "description": "Your liquidity empowers DeFi — vote for pools, earn bribes, and maximize your rewards.",
     "image": {
       "small": {
-        "webp": "../images/what-is-backyard/liquidity-small.webp",
-        "png": "../images/what-is-backyard/liquidity-small.png"
+        "webp": "/images/what-is-backyard/liquidity-small.webp",
+        "webp2x": "/images/what-is-backyard/liquidity-small@2x.webp",
+        "png": "/images/what-is-backyard/liquidity-small.png",
+        "png2x": "/images/what-is-backyard/liquidity-small@2x.png"
       },
       "big": {
-        "webp": "../images/what-is-backyard/liquidity-big.webp",
-        "png": "../images/what-is-backyard/liquidity-big.png"
+        "webp": "/images/what-is-backyard/liquidity-big.webp",
+        "webp2x": "/images/what-is-backyard/liquidity-big@2x.webp",
+        "png": "/images/what-is-backyard/liquidity-big.png",
+        "png2x": "/images/what-is-backyard/liquidity-big@2x.png"
       }
     }
   }
