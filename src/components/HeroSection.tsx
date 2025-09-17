@@ -9,10 +9,10 @@ const HeroSection = () => {
       className='
     pt-[84px] md:pt-[126px] xl:pt-[128px]
     pb-[68px] md:pb-[120px] xl:pb-[170px]
-    bg-[linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)),url("../images/hero/mob-hero-bg.png")]
+    bg-[linear-gradient(rgba(255,255,255,0.9),rgba(239,239,242,1)),url("../images/hero/mob-hero-bg.png")]
     md:bg-[linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)),url("../images/hero/tab-hero-bg.png")]
-    xl:bg-[linear-gradient(rgba(255,255,255,0.9),url("../images/hero/desk-hero-bg.png")]
-    lg:bg-[linear-gradient(rgba(255,255,255,0.9),url("../images/hero/large-hero-bg.png")]
+    xl:bg-[linear-gradient(rgba(255,255,255,0.99),rgba(239,239,242,0.5)),url("../images/hero/desk-hero-bg.png")]
+    2xl:bg-[linear-gradient(rgba(255,255,255,0.9),rgba(239,239,242,1)),url("../images/hero/large-hero-bg.png")]
     bg-cover bg-center'
     >
       <Container>
@@ -48,36 +48,39 @@ const HeroSection = () => {
               <source
                 srcSet='../images/hero/large-hero.webp 1x, ../images/hero/large-hero@2x.webp 2x'
                 type='image/webp'
+                media='(min-width:1920px)'
               />
               <source
                 srcSet='../images/hero/large-hero.png 1x, ../images/hero/large-hero@2x.png 2x'
-                media='min-width:768px'
+                media='(min-width:1920px)'
                 type='image/png'
               />
 
               <source
                 srcSet='../images/hero/desk-hero.webp 1x, ../images/hero/desk-hero@2x.webp 2x'
                 type='image/webp'
+                media='(min-width:1280px)'
               />
               <source
                 srcSet='../images/hero/desk-hero.png 1x, ../images/hero/desk-hero@2x.png 2x'
-                media='min-width:768px'
+                media='(min-width:1280px)'
                 type='image/png'
               />
 
               <source
                 srcSet='../images/hero/tab-hero.webp 1x, ../images/hero/tab-hero@2x.webp 2x'
                 type='image/webp'
+                media='(min-width:768px)'
               />
               <source
                 srcSet='../images/hero/tab-hero.png 1x, ../images/hero/tab-hero@2x.png 2x'
-                media='min-width:768px'
+                media='(min-width:768px)'
                 type='image/png'
               />
               <img
                 src='../images/hero/tab-hero.png'
                 alt='A hero image'
-                className='h-auto w-full md:max-w-[152px] xl:max-w-[212px] lg:max-w-[276px]'
+                className='h-auto w-full md:max-w-[152px] xl:max-w-[212px] 2xl:max-w-[276px]'
               />
             </picture>
           )}

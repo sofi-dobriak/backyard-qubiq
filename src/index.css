@@ -1,13 +1,5 @@
 @import "tailwindcss";
 
-@theme {
-  --font-family-konnect: "Konnect", sans-serif;
-  --font-family-gilroy: "Gilroy", sans-serif;
-  --font-family-archivo: "Archivo", sans-serif;
-
-  --breakpoint-lg: 1920px;
-}
-
 
 @font-face {
   font-display: swap;
@@ -81,8 +73,7 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: "Archivo", sans-serif;
 }
 
@@ -111,4 +102,16 @@ nav+button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.archivo {
+  font-family: "Archivo", sans-serif;
+}
+
+.konnect {
+  font-family: "Konnect", sans-serif;
+}
+
+.gilroy {
+  font-family: "Gilroy", sans-serif;
 }

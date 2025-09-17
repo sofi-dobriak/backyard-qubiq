@@ -5,10 +5,10 @@ const Header = () => {
   const isTablet = useMediaQuery({ maxWidth: 1279 });
 
   return (
-    <header className='flex items-center justify-between xl:justify-normal fixed top-[24px] left-[50%] translate-x-[-50%] w-full max-w-[320px] md:max-w-[696px] xl:max-w-[1100px] lg:max-w-[1920px] z-1000'>
+    <header className='flex items-center justify-between xl:justify-normal fixed top-[24px] left-[50%] translate-x-[-50%] w-full max-w-[320px] md:max-w-[696px] xl:max-w-[1100px] z-1000'>
       <a
         href='../../index.html'
-        className='flex gap-2 items-center text-base text-[rgba(51,51,51,0.95)] xl:mr-[230px]'
+        className='flex gap-[8px] items-center text-base text-[rgba(51,51,51,0.95)] xl:mr-[230px]'
       >
         <img
           src={isMobile ? '../images/mob-logo.png' : '../images/tab-logo.png'}
