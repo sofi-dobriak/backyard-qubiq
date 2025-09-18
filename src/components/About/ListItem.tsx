@@ -27,7 +27,7 @@ const ListItem = ({ id, title, description_title, description, image }: ListItem
 
   return (
     <li className='md:flex flex-row-reverse items-center justify-between xl:block'>
-      <picture>
+      <picture className='flex-shrink-0'>
         <source
           srcSet={`${image.big.webp} 1x, ${image.big.webp2x} 2x`}
           type='image/webp'
@@ -52,15 +52,11 @@ const ListItem = ({ id, title, description_title, description, image }: ListItem
         <img
           src={src}
           alt={altText}
-          className='
-          w-[179px] h-[179px]
-          md:h-[245px] md:w-[245px]
-          xl:w-[179px] xl:h-[179px]
-          m-auto relative z-[-1]'
+          className='w-[179px] h-[179px] md:w-[245px] md:h-[245px] xl:w-[179px] xl:h-[179px] m-auto relative z-[-1]'
         />
       </picture>
 
-      <div className='mt-[-24px] md:mt-0 xl:mt-[-20px]'>
+      <div className='mt-[-24px] md:mt-0 xl:mt-[-20px] w-full max-w[310px] md:max-w[388px] xl:max-w[310px] 2xl:max-w[340px]'>
         <div className='flex items-center mb-[15px] p-[12px] bg-[#f4f6f7] rounded-[45px] w-full max-w-[310px] md:max-w-[388px] xl:max-w-[320px] 2xl:max-w-[340px]'>
           <p
             className={clsx(
@@ -73,7 +69,7 @@ const ListItem = ({ id, title, description_title, description, image }: ListItem
           <h3 className='text-[20px] ml-auto mr-auto'>{title}</h3>
         </div>
 
-        <div className='rounded-[31px] bg-[#f4f6f7] px-[30px] py-[30px] w-full max-w-[310px] md:max-w-[388px] xl:min-w-[320px] 2xl:max-w-[340px]'>
+        <div className='rounded-[31px] bg-[#f4f6f7] p-[30px] 2xl:p-[23px] w-full max-w-[310px] md:max-w-[388px] xl:min-w-[320px] 2xl:max-w-[340px]'>
           <p
             className={clsx(
               'archivo',
