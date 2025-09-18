@@ -1,6 +1,7 @@
 import { useMediaQuery } from 'react-responsive';
 import HeroImages from './HeroImages';
 import HeroButtons from './HeroButtons';
+import clsx from 'clsx';
 
 const HeroContent = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -8,7 +9,12 @@ const HeroContent = () => {
   return (
     <>
       <div className='flex items-center justify-between'>
-        <h1 className='font-semibold text-[58px] md:text-[48px] xl:text-[72px] leading-[1.1] mb-[14px] md:mb-[16px] md:max-w-[506px] xl:max-w-[740px]'>
+        <h1
+          className={clsx(
+            'archivo',
+            'font-semibold text-[58px] md:text-[48px] xl:text-[72px] leading-[1.1] mb-[14px] md:mb-[16px] md:max-w-[506px] xl:max-w-[740px]'
+          )}
+        >
           The yield-backed stablecoin protocol boosting {!isMobile && 'DeFi'}
           {isMobile && (
             <span className='flex gap-[16px] md:block md:gap-0'>

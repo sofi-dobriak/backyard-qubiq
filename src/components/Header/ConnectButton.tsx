@@ -51,7 +51,10 @@ const ConnectButton = () => {
           </p>
           <button
             onClick={handleCopyConnectLink}
-            className='group bg-[rgba(196,196,196,0.21)] rounded-full p-[8px] cursor-pointer hover:bg-[rgba(145,145,145,0.21)] focus:bg-[rgba(145,145,145,0.36)]'
+            className={clsx(
+              'konnect',
+              'group bg-[rgba(196,196,196,0.21)] rounded-full p-[8px] cursor-pointer hover:bg-[rgba(145,145,145,0.21)] focus:bg-[rgba(145,145,145,0.36)]'
+            )}
           >
             <svg
               width={17}

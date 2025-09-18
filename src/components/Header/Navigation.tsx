@@ -14,6 +14,7 @@ const Navigation = () => {
               setActiveLink('home');
             }}
             className={clsx(
+              'konnect',
               ' px-[10px] py-[8px] rounded-full hover:bg-[#303030] hover:text-[#fbfbfc]',
               activeLink === 'home'
                 ? 'bg-[#303030] text-[#fbfbfc]'
@@ -30,6 +31,7 @@ const Navigation = () => {
               setActiveLink('about');
             }}
             className={clsx(
+              'konnect',
               ' px-[10px] py-[8px] rounded-full hover:bg-[#303030] hover:text-[#fbfbfc]',
               activeLink === 'about'
                 ? 'bg-[#303030] text-[#fbfbfc]'
@@ -46,6 +48,7 @@ const Navigation = () => {
               setActiveLink('how-it-works');
             }}
             className={clsx(
+              'konnect',
               ' px-[10px] py-[8px] rounded-full hover:bg-[#303030] hover:text-[#fbfbfc]',
               activeLink === 'how-it-works'
                 ? 'bg-[#303030] text-[#fbfbfc]'
@@ -62,6 +65,7 @@ const Navigation = () => {
               setActiveLink('token-design');
             }}
             className={clsx(
+              'konnect',
               ' px-[10px] py-[8px] rounded-full hover:bg-[#303030] hover:text-[#fbfbfc]',
               activeLink === 'token-design'
                 ? 'bg-[#303030] text-[#fbfbfc]'
@@ -78,6 +82,7 @@ const Navigation = () => {
               setActiveLink('yard-flywheel');
             }}
             className={clsx(
+              'konnect',
               ' px-[10px] py-[8px] rounded-full hover:bg-[#303030] hover:text-[#fbfbfc]',
               activeLink === 'yard-flywheel'
                 ? 'bg-[#303030] text-[#fbfbfc]'

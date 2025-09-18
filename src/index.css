@@ -72,22 +72,16 @@ body {
   background-color: #efeff2;
 }
 
-h1,
-h2 {
+.archivo {
   font-family: "Archivo", sans-serif;
 }
 
-nav,
-nav+button {
+.konnect {
   font-family: "Konnect", sans-serif;
-  font-size: 11px;
-  font-weight: 500;
 }
 
-@media screen and (min-width:1280px) {
-  nav {
-    font-size: 13px;
-  }
+.gilroy {
+  font-family: "Gilroy", sans-serif;
 }
 
 .visually-hidden {
@@ -104,14 +98,14 @@ nav+button {
   overflow: hidden;
 }
 
-.archivo {
-  font-family: "Archivo", sans-serif;
+nav,
+nav+button {
+  font-size: 11px;
+  font-weight: 500;
 }
 
-.konnect {
-  font-family: "Konnect", sans-serif;
-}
-
-.gilroy {
-  font-family: "Gilroy", sans-serif;
+@media screen and (min-width:1280px) {
+  nav {
+    font-size: 13px;
+  }
 }
